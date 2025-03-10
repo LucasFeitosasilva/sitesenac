@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutricionista - Saúde em Primeiro Lugar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Nutricionista - Saúde em Primeiro Lugar</h1>
+    </header>
+    <section class="faixa" id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Sou um nutricionista dedicado a ajudar meus clientes a alcançar uma vida saudável através de uma alimentação equilibrada e personalizada.</p>
+    </section>
+    <section class="faixa" id="servicos">
+        <h2>Serviços Oferecidos</h2>
+        <ul>
+            <li>Avaliação Nutricional</li>
+            <li>Plano Alimentar Personalizado</li>
+            <li>Acompanhamento Nutricional</li>
+            <li>Consultoria para Empresas</li>
+        </ul>
+    </section>
+    <section class="faixa" id="beneficios">
+        <h2>Vantagens e Benefícios</h2>
+        <p>Com um acompanhamento nutricional, você terá mais energia, melhor disposição e uma vida mais saudável.</p>
+    </section>
+    <section class="faixa" id="contato">
+        <h2>Entre em Contato</h2>
+        <form action="https://example.com/submit" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Nutricionista - Saúde em Primeiro Lugar. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.faixa {
+    padding: 2em;
+    text-align: center;
+}
+
+#sobre {
+    background-color: #f9f9f9;
+}
+
+#servicos {
+    background-color: #e9e9e9;
+}
+
+#beneficios {
+    background-color: #f9f9f9;
+}
+
+#contato {
+    background-color: #e9e9e9;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label, input, textarea {
+    margin: 0.5em 0;
+    width: 80%;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .faixa {
+        padding: 1em;
+    }
+
+    label, input, textarea {
+        width: 100%;
+    }
+}
